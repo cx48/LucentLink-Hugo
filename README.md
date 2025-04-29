@@ -6,8 +6,6 @@ A clean, customizable, and responsive Linktree-style landing page built using HT
 
 [LucentLink](https://cx48.github.io/LucentLink-Hugo") can be deployed for free using Vercel or GitHub Pages
 
-![Demo of LucentLink](static/images/demo.gif)
-
 ##
 
 ![LucentLink Screenshot](https://raw.githubusercontent.com/cx48/LucentLink-Hugo/refs/heads/main/static/images/screenshot.png)

@@ -30,11 +30,18 @@ A clean, customizable, and responsive Linktree-style landing page built using HT
 ### Quick Setup
 
 1. Create a new Hugo site (if you haven’t already)
+
+```
 hugo new site my-site
+cd my-site
+```
 
 2. Clone this repo into your Hugo site’s themes folder
+
+```
 cd themes/
 git clone https://github.com/cx48/LucentLink-Hugo.git
+```
 
 3. Enable the theme in your new site’s `config.toml`. If `config.toml` doesn't exists, then edit `hugo.toml` by adding the following code.
 
@@ -42,7 +49,7 @@ git clone https://github.com/cx48/LucentLink-Hugo.git
 baseURL = "https://yourdomain.com/"
 languageCode = "en-us"
 title = "LucentLink"
-theme = "lucentlink"
+theme = "LucentLink-Hugo"
 minVersion = "0.115.0"
 
 [params]
@@ -56,7 +63,10 @@ minVersion = "0.115.0"
 4. Copy or edit `content/_index.md`—that’s the only file you ever need to touch.
 
 5. Run the dev server
+
+```
 hugo server -D
+```
 
 ## Configuration
 
@@ -64,7 +74,7 @@ All content is driven by front matter in `content/_index.md`:
 
 ```yaml
 title: "LucentLink"
-profileImage: "/images/img.jpg"
+profileImage: "images/img.jpg"
 name: "Your Name"
 description: "Your tagline or role"
 socials:

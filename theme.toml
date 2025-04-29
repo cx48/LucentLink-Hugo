@@ -9,9 +9,6 @@ description = "A simple, Tailwind-powered Linktree-style Hugo theme with profile
 tags        = ["linktree", "tailwind", "responsive", "onepage"]
 features    = ["assetsMinification", "imageProcessing", "markdownRendering"]
 
-screenshot = "/images/screenshot.png"
-thumbnail  = "/images/tn.png"
-
 # If the theme has a single author
 [author]
     name = "cx48"

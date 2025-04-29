@@ -8,7 +8,9 @@ A clean, customizable, and responsive Linktree-style landing page built using HT
 
 ![Demo of LucentLink](static/images/demo.gif)
 
-![LucentLink Screenshot](screenshot.png)
+##
+
+![LucentLink Screenshot](https://raw.githubusercontent.com/cx48/LucentLink-Hugo/refs/heads/main/static/images/screenshot.png)
 
 ## Features
 

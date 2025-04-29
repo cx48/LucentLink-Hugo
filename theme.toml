@@ -7,3 +7,9 @@ demo        = "https://cx48.github.io/LucentLink-Hugo"
 description = "A simple, Tailwind-powered Linktree-style Hugo theme with profile, messaging, About and link cards."
 tags        = ["linktree", "tailwind", "responsive", "onepage"]
 features    = ["assetsMinification", "imageProcessing", "markdownRendering"]
+
+# If the theme has a single author
+[author]
+    name = "cx48"
+    homepage = "https://cx48.dev"
+

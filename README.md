@@ -39,8 +39,7 @@ cd my-site
 2. Clone this repo into your Hugo site’s themes folder
 
 ```
-cd themes/
-git clone https://github.com/cx48/LucentLink-Hugo.git
+git clone https://github.com/cx48/LucentLink-Hugo.git themes/LucentLink-Hugo
 ```
 
 3. Enable the theme in your new site’s `config.toml`. If `config.toml` doesn't exists, then edit `hugo.toml` by adding the following code.

@@ -4,13 +4,17 @@ licenseURL  = "https://github.com/cx48/LucentLink-Hugo/blob/main/LICENSE"
 min_version = "0.115.0"  
 homepage    = "https://github.com/cx48/LucentLink-Hugo"
 repository  = "https://github.com/cx48/LucentLink-Hugo"
-demo        = "https://cx48.github.io/LucentLink-Hugo"
+demosite        = "https://cx48.github.io/LucentLink-Hugo"
 description = "A simple, Tailwind-powered Linktree-style Hugo theme with profile, messaging, About and link cards."
 tags        = ["linktree", "tailwind", "responsive", "onepage"]
 features    = ["assetsMinification", "imageProcessing", "markdownRendering"]
 
-# If the theme has a single author
 [author]
     name = "cx48"
     homepage = "https://cx48.dev"
-
+    
+[original]
+  name = "LucentLink"
+  author = "cx48"
+  homepage = "https://github.com/cx48/LucentLink"
+  repo = "https://github.com/cx48/LucentLink"

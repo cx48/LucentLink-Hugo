@@ -57,6 +57,10 @@ links:
     title: "Podcast"
     description: "Listen to my show"
 
+# Spotify playlist embed. You can add embed by rigth clicking on your spotify playlist -> Share -> Copy embed. After copying the embed, replace it with the iframe below.
+spotifyPlaylist:
+  iframe: '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6zcsSLDrLiCpX8KDzNiIhS?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+
 # Messaging Etiquette. You can add new rules as per your needs.
 messaging:
   title: "Messaging Etiquette"
@@ -90,5 +94,3 @@ messaging:
 #     # - heading: "Personal Interests"
 #     #   content: "When not coding, I enjoy photography, hiking, and contributing to local tech communities through mentorship programs."
 ---
-
-Welcome to my hub! Below are all the places you can find me online.

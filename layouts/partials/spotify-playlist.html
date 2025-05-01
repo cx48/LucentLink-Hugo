@@ -1,0 +1,10 @@
+{{/* layouts/partials/spotify-playlist.html */}}
+{{ with .Params.spotifyPlaylist.iframe }}
+  <div class="spotify-widget h-auto bg-white bg-opacity-10 rounded-lg p-6 mb-8 border border-white border-opacity-20 text-white mt-6">
+    <div class="flex items-center mb-4">
+      <i class="fab fa-spotify text-2xl mr-3 mb-1"></i>
+      <h3 class="text-xl font-bold">My Spotify Playlist</h3>
+    </div>
+    {{ . | safeHTML }}
+  </div>
+{{ end }}

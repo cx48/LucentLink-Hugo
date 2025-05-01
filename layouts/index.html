@@ -12,8 +12,16 @@
         <!-- Links Section -->
         {{ partial "link-card.html" . }}
 
+        <!-- Spotify Embed -->
+        {{ partial "spotify-playlist.html" . }}
+
         <!-- Messaging Etiquette section -->
         {{ partial "messaging-etiquette.html" . }}
+          
+        
+        <!-- Embed with hue-shift filter -->
+        <!-- style="filter: hue-rotate(150deg) saturate(0.6) brightness(0.9);" -->
+
 
         <!-- About Me section (If you want to write about yourself, uncomment the section below)--> 
         {{ partial "about.html" . }}
@@ -28,6 +36,5 @@
     </div>
 
     <script src="js/script.js"></script>
-
 </body>
 </html>

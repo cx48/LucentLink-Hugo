@@ -1,4 +1,5 @@
-<div class="bg-white bg-opacity-10 rounded-lg p-6 mb-6 border border-white border-opacity-20">
+<div class="pulsating-box rounded-lg p-6 mb-8 border border-white/20 text-white mt-6"
+     style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px);">
     <h2 class="text-xl font-bold mb-4">{{ .Params.messaging.title }}</h2>
     <div class="space-y-3">
       {{ range .Params.messaging.items }}
@@ -10,4 +11,4 @@
         </div>
       {{ end }}
     </div>
-  </div>
+</div>

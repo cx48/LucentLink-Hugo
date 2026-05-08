@@ -57,13 +57,15 @@ minVersion = "0.115.0"
   home = ["HTML"]
 ```
 
-4. Copy or edit `content/_index.md`—that’s the only file you ever need to touch.
+4. Copy or edit `content/_index.md`—that’s the only file you need to touch.
 
 5. Run the dev server
 
 ```
 hugo server -D
 ```
+
+> To remove the instructions block, delete or comment out the line `{{ partial "instructions.html" . }}` in `layouts/index.html`.
 
 ## Configuration
 

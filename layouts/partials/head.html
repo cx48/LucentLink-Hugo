@@ -2,12 +2,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ .Site.Title }}</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="title" content="{{ with .Params.name }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ .Permalink }}" />
+    <meta property="og:title" content="{{ with .Params.name }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    {{ with .Params.profileImage }}
+    {{ $img := replaceRE "^/" "" . }}
+    <meta property="og:image" content="{{ $img | absURL }}" />
+    {{ end }}
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="{{ .Permalink }}" />
+    <meta property="twitter:title" content="{{ with .Params.name }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}" />
+    <meta property="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}" />
+    {{ with .Params.profileImage }}
+    {{ $img := replaceRE "^/" "" . }}
+    <meta property="twitter:image" content="{{ $img | absURL }}" />
+    {{ end }}
+
+    <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32x32.png" | relURL }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon-16x16.png" | relURL }}">
     <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
-  </head>
-  
+</head>
